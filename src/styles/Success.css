@@ -1,0 +1,19 @@
+.Success {
+  margin: 0 0 4em 0;
+}
+.Success-map {
+  margin: 10px 0 0 0;
+}
+.Success-button{
+  background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+  margin-top: 50px;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px;
+  border: 0px;
+  outline: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+}
