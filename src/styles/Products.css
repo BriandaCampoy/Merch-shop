@@ -10,26 +10,42 @@
   border-radius: 5px;
   margin: 0 0 20px 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .Products-item-info {
   padding: 10px;
 }
 .Products-item-info h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   display: flex;
+  align-items: start;
   justify-content: space-between;
+  height: 90px;
+  /* width: 250px; */
+  align-items: baseline;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .Products-item-info h2 span {
+  /* width: 100%; */
   color: #33b13a;
+  text-align: end;
+  white-space: nowrap;
+  align-self: center;
 }
 .Products-item-info p {
   font-size: 14px;
   font-weight: 300;
+  height: 95px;
+  overflow: hidden;
 }
 .Products-item img {
   width: 100%;
   height: 200px;
+  width: 200px;
   border-radius: 5px 5px 0 0;
   object-fit: contain;
 }

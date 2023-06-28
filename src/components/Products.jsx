@@ -17,7 +17,7 @@ const Products = () => {
         <Product key={product.id} product={product} handleAddToCart={handleAddToCart}/>
       ))}
     </div>
-    </div>;
+    </div>
 };
 
 export default Products;

@@ -1,7 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import initialState from '../initialState.js';
+import getProducts from '../service/getProducts.js';
+
 const useInitialState = () => {
   const [state, setState] = useState(initialState);
+
+  useEffect(()=>{
+    getProducts().then((productsApi) =>{
+      setState({...state, products: productsApi})
+    })
+  },[])
 
   const addToCart = (payload) => {
     const indexFind = state.cart.findIndex(
